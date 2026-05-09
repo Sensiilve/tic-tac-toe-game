@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动态井字棋</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>动态井字棋</h1>
+        <div class="phase-info" id="phaseInfo">放置阶段：轮流放置棋子</div>
+        <div id="status" class="status">当前回合：X | 请放置棋子</div>
+
+        <div class="board" id="board">
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+        </div>
+
+        <button id="resetBtn" class="reset-btn hidden">再来一局</button>
+
+        <div class="rules">
+            <strong>规则：</strong><br>
+            1. 放置阶段：轮流将棋子放在空格中（每人3子）<br>
+            2. 移动阶段：将自己的棋子移动到任意空格<br>
+            3. 先连成三连者获胜，不会有平局！
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
